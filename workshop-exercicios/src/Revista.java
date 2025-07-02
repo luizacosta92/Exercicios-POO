@@ -1,4 +1,4 @@
-public class Revista extends Livro implements ItemBiblioteca{
+public class Revista extends Item{
     private int edicao;
 
     public Revista(){
@@ -12,6 +12,11 @@ public class Revista extends Livro implements ItemBiblioteca{
     @Override
     public void exibirDetalhes(){
         System.out.printf("Revista: %s, editora %s, edição %d", titulo, autor, edicao);
+    }
+
+    @Override
+    public String getTipo() {
+        return "Revista";
     }
 
 }

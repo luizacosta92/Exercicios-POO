@@ -1,13 +1,5 @@
-public class Livro implements ItemBiblioteca {
-    public  String titulo;
-    public String autor;
+public class Livro extends Item {
     private int anoPublicacao;
-
-    public Livro(){
-        this.titulo = titulo;
-        this.autor = autor;
-        this.anoPublicacao = anoPublicacao;
-    }
 
     public int getAnoPublicacao(){
         return anoPublicacao;
@@ -18,11 +10,14 @@ public class Livro implements ItemBiblioteca {
         } else{
             throw new IllegalArgumentException("O ano não pode ser negativo");
         }
-
     }
     @Override
     public void exibirDetalhes(){
         System.out.printf("Título: %s. Autor: %s. Ano de publicação: %d", titulo, autor,anoPublicacao);
     }
 
+    @Override
+    public String getTipo() {
+        return "Livro";
+    }
 }
