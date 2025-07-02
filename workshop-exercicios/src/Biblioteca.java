@@ -13,6 +13,7 @@ public class Biblioteca {
         itens.forEach(item -> System.out.println(item));
     }
 
+
     public String buscarItemPorTitulo(String titulo) {
         for (Item item : itens) {
             if (titulo.equalsIgnoreCase(titulo)) {

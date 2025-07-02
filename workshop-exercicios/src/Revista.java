@@ -19,5 +19,10 @@ public class Revista extends Item{
         return "Revista";
     }
 
+    @Override
+    public String toString() {
+        return getTipo() + " - Titulo: " + titulo + ". Editora: " + autor + ". Edição: " + edicao;
+    }
+
 }
 

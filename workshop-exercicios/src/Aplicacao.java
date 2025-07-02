@@ -6,6 +6,7 @@ public class Aplicacao {
         livro1.titulo = "Cem anos de solidao";
         livro1.autor = "Gabo";
         livro1.setAnoPublicacao(1967);
+        livro1.getTipo();
 
         Livro livro2 = new Livro();
         livro2.titulo = "Salvar o Fogo";
@@ -21,6 +22,8 @@ public class Aplicacao {
         biblioteca.adicionarItem(livro2);
         biblioteca.adicionarItem(revista1);
         biblioteca.listarItens();
+        biblioteca.buscarItemPorTitulo(livro1.titulo);
+
 
 
 

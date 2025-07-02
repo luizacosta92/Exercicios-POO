@@ -20,4 +20,9 @@ public class Livro extends Item {
     public String getTipo() {
         return "Livro";
     }
+
+    @Override
+    public String toString() {
+        return getTipo() + " - Titulo: " + titulo + ", Autor: " + autor + ". Ano de publicacão: " + anoPublicacao;
+    }
 }
