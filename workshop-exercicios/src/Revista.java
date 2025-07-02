@@ -9,11 +9,10 @@ public class Revista extends Livro implements ItemBiblioteca{
         this.edicao = edicao;
     }
 
-    public void exibirDetalhes(){
-        System.out.printf(toString());
-    }
     @Override
-    public String toString(){
-        return String.format("Revista: %s, editora %s, edição %d", titulo, autor, edicao);
+    public void exibirDetalhes(){
+        System.out.printf("Revista: %s, editora %s, edição %d", titulo, autor, edicao);
     }
+
 }
+

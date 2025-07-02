@@ -20,14 +20,9 @@ public class Livro implements ItemBiblioteca {
         }
 
     }
-
-    public void exibirDetalhes(){
-        System.out.printf(toString());
-    }
-
     @Override
-    public String toString(){
-        return String.format("Título: %s. Autor: %s. Ano de publicação: %d", titulo, autor,anoPublicacao);
-
+    public void exibirDetalhes(){
+        System.out.printf("Título: %s. Autor: %s. Ano de publicação: %d", titulo, autor,anoPublicacao);
     }
+
 }
